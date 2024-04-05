@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
 import sys, subprocess
-import PredictBind, Files, P2Rank, Utils, TSV
-method, files, verbose, chimera, pymol, threads, evalpredict = PredictBind.cli()
+import Cli, P2Rank, Utils, Files, TSV
+
+method, files, verbose, chimera, pymol, threads, evalpredict = Cli.cli()
 
 def open_chimera_pymol(output_dir, file, chimera, pymol):
     if chimera == True:

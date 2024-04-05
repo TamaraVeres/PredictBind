@@ -31,10 +31,11 @@ OpenJDK 64-Bit Server VM Homebrew (build 11.0.22+0, mixed mode)
 
 # Installation
 
-Make sure you have the listed dependencies and install binder with pip.
+An installation script is provided so that PredictBind can be easily used across the current user's environment. The script creates a wrapper PredictBind script in the user's `/usr/local/bin` to not be too intrusive. You might or might not be needing to use `sudo` privileges.
 
 ```bash
-pip install PredictBind
+chmod -X install.sh
+sudo install.sh
 ```
   
 # Commands
@@ -64,7 +65,7 @@ options:
 
 ## Tutorials
 
-TBD.
+[You can find the Tehoretical background in the attached GDOC in the second section](https://docs.google.com/document/d/1_G-ziQevfMg6d-6FE8kpPQY8KvcUbmN3rZmMvoc5TgM/edit?usp=sharing)
 
 ## Examples
 
@@ -201,11 +202,11 @@ pymol {path}/predict_{pdb}/visualizations/{pdb}.pdb.pml
 
 # Theoretical background
 
-TBD
+[You can find the Theoretical background in the attached GDOC in the first section](https://docs.google.com/document/d/1_G-ziQevfMg6d-6FE8kpPQY8KvcUbmN3rZmMvoc5TgM/edit?usp=sharing)
 
 # Analysis
 
-TBD
+[You can find the Analysis in the attached GDOC in the last section](https://docs.google.com/document/d/1_G-ziQevfMg6d-6FE8kpPQY8KvcUbmN3rZmMvoc5TgM/edit?usp=sharing)
 
 # References
 

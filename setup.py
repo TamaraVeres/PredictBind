@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='PredictBind',
-    version='1.0.1',
-    packages=setuptools.find_packages(),
-    package_data={'PredictBind': ['p2rank.jar']},
+    version='1.0.7',
+    packages=['PredictBind'],
+    package_data={'PredictBind': ['training_data/*']},
     install_requires=['requests'],
     author='Tamara Veres',
     author_email='tamaraveres19@gmail.com',
@@ -20,4 +20,9 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License", 
         "Operating System :: OS Independent", 
     ], 
+    entry_points={
+        'console_scripts': [
+            'PredictBind=PredictBind.Main:cli',
+        ],
+    },
 )
